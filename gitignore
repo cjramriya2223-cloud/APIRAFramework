@@ -18,7 +18,7 @@ logs/
 test-output/
 reports/
 extent-reports/
-allure-results
+allure-results/
 
 # Screenshots
 screenshots/
