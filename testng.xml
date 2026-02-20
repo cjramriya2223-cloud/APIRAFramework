@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.qa.api.gorest.tests.GetAllUserTest"/>
+      <class name="com.qa.api.gorest.tests.PatchCallTest"/>
+      <class name="com.qa.api.gorest.tests.PutCallTest"/>
+      <class name="com.qa.api.gorest.tests.DeleteTest"/>
+      <class name="com.qa.api.gorest.tests.DataDriventest"/>
+      <class name="com.qa.api.contacts.tests.CreateUserTest"/>
+      <class name="com.qa.api.gorest.tests.CompletePostCallScenario"/>
+      <class name="com.qa.api.fakestore.tests.FakeStoreGetProducts"/>
+      <class name="com.qa.api.gorest.tests.PostCallsTest"/>
+      <class name="com.qa.api.scehma.tests.GetAllUserSchemaValidationTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

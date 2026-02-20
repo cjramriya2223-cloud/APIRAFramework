@@ -1,0 +1,332 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>36/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Feb 16 01:18:04 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>26 seconds (26234 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.api.gorest.tests.PutCallTest.updatingUserDetailUsingPutCall()'><b>updatingUserDetailUsingPutCall</b><br>Test class: com.qa.api.gorest.tests.PutCallTest</td>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code (&lt;201&gt; or &lt;200&gt;) but was &lt;422&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.qa.api.client.RestClient.put(RestClient.java:155)
+	at com.qa.api.gorest.tests.PutCallTest.updatingUserDetailUsingPutCall(PutCallTest.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace216112262", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace216112262'><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code (&lt;201&gt; or &lt;200&gt;) but was &lt;422&gt;.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at com.qa.api.client.RestClient.put(RestClient.java:155)
+	at com.qa.api.gorest.tests.PutCallTest.updatingUserDetailUsingPutCall(PutCallTest.java:71)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>com.qa.api.gorest.tests.PutCallTest@4ef74c30</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.api.gorest.tests.DataDriventest.createuserByPassingValueViaFile()'><b>createuserByPassingValueViaFile</b><br>Test class: com.qa.api.gorest.tests.DataDriventest<br>Parameters: Anu3, female, active</td>
+<td></td>
+<td>0</td>
+<td>com.qa.api.gorest.tests.DataDriventest@4bff7da0</td></tr>
+<tr>
+<td title='com.qa.api.gorest.tests.GetAllUserTest.getallusers()'><b>getallusers</b><br>Test class: com.qa.api.gorest.tests.GetAllUserTest</td>
+<td></td>
+<td>1</td>
+<td>com.qa.api.gorest.tests.GetAllUserTest@376a0d86</td></tr>
+<tr>
+<td title='com.qa.api.gorest.tests.DataDriventest.createuserByPassingValueViaFile()'><b>createuserByPassingValueViaFile</b><br>Test class: com.qa.api.gorest.tests.DataDriventest<br>Parameters: Ram1, male, active</td>
+<td></td>
+<td>0</td>
+<td>com.qa.api.gorest.tests.DataDriventest@4bff7da0</td></tr>
+<tr>
+<td title='com.qa.api.gorest.tests.DataDriventest.createuserByPassingValueViaFile()'><b>createuserByPassingValueViaFile</b><br>Test class: com.qa.api.gorest.tests.DataDriventest<br>Parameters: Riya2, female, active</td>
+<td></td>
+<td>0</td>
+<td>com.qa.api.gorest.tests.DataDriventest@4bff7da0</td></tr>
+<tr>
+<td title='com.qa.api.gorest.tests.PostCallsTest.createuserByPojowithoutBuilder()'><b>createuserByPojowithoutBuilder</b><br>Test class: com.qa.api.gorest.tests.PostCallsTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.api.gorest.tests.PostCallsTest@536dbea0</td></tr>
+<tr>
+<td title='com.qa.api.gorest.tests.DataDriventest.createuserByPassingValueDirectly()'><b>createuserByPassingValueDirectly</b><br>Test class: com.qa.api.gorest.tests.DataDriventest<br>Parameters: Anu, female, active</td>
+<td></td>
+<td>0</td>
+<td>com.qa.api.gorest.tests.DataDriventest@4bff7da0</td></tr>
+<tr>
+<td title='com.qa.api.gorest.tests.DataDriventest.createuserByPassingValueViaFile()'><b>createuserByPassingValueViaFile</b><br>Test class: com.qa.api.gorest.tests.DataDriventest<br>Parameters: Jamuna2, female, active</td>
+<td></td>
+<td>0</td>
+<td>com.qa.api.gorest.tests.DataDriventest@4bff7da0</td></tr>
+<tr>
+<td title='com.qa.api.gorest.tests.PatchCallTest.updatingUserDetailUsingPutCall()'><b>updatingUserDetailUsingPutCall</b><br>Test class: com.qa.api.gorest.tests.PatchCallTest</td>
+<td></td>
+<td>1</td>
+<td>com.qa.api.gorest.tests.PatchCallTest@7283d3eb</td></tr>
+<tr>
+<td title='com.qa.api.gorest.tests.DataDriventest.createuserByPassingValueDirectly()'><b>createuserByPassingValueDirectly</b><br>Test class: com.qa.api.gorest.tests.DataDriventest<br>Parameters: Karthick, male, inactive</td>
+<td></td>
+<td>0</td>
+<td>com.qa.api.gorest.tests.DataDriventest@4bff7da0</td></tr>
+<tr>
+<td title='com.qa.api.gorest.tests.PostCallsTest.createuserByPassingFilewithRandomEmail()'><b>createuserByPassingFilewithRandomEmail</b><br>Test class: com.qa.api.gorest.tests.PostCallsTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.api.gorest.tests.PostCallsTest@536dbea0</td></tr>
+<tr>
+<td title='com.qa.api.gorest.tests.DataDriventest.createuserByPassingValueViaFile()'><b>createuserByPassingValueViaFile</b><br>Test class: com.qa.api.gorest.tests.DataDriventest<br>Parameters: Anu2, female, active</td>
+<td></td>
+<td>0</td>
+<td>com.qa.api.gorest.tests.DataDriventest@4bff7da0</td></tr>
+<tr>
+<td title='com.qa.api.gorest.tests.DataDriventest.createuserByPassingValueDirectly()'><b>createuserByPassingValueDirectly</b><br>Test class: com.qa.api.gorest.tests.DataDriventest<br>Parameters: Rajesh1, male, active</td>
+<td></td>
+<td>0</td>
+<td>com.qa.api.gorest.tests.DataDriventest@4bff7da0</td></tr>
+<tr>
+<td title='com.qa.api.gorest.tests.GetAllUserTest.getFeMaleandInActiveusers()'><b>getFeMaleandInActiveusers</b><br>Test class: com.qa.api.gorest.tests.GetAllUserTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.api.gorest.tests.GetAllUserTest@376a0d86</td></tr>
+<tr>
+<td title='com.qa.api.gorest.tests.InternetHerokuappGetCallTest.getcall()'><b>getcall</b><br>Test class: com.qa.api.gorest.tests.InternetHerokuappGetCallTest</td>
+<td></td>
+<td>1</td>
+<td>com.qa.api.gorest.tests.InternetHerokuappGetCallTest@3e62d773</td></tr>
+<tr>
+<td title='com.qa.api.gorest.tests.DataDriventest.createuserByPassingValueViaFile()'><b>createuserByPassingValueViaFile</b><br>Test class: com.qa.api.gorest.tests.DataDriventest<br>Parameters: Cerlin1, male, active</td>
+<td></td>
+<td>0</td>
+<td>com.qa.api.gorest.tests.DataDriventest@4bff7da0</td></tr>
+<tr>
+<td title='com.qa.api.gorest.tests.CompletePostCallScenario.createuserinContact()'><b>createuserinContact</b><br>Test class: com.qa.api.gorest.tests.CompletePostCallScenario</td>
+<td></td>
+<td>2</td>
+<td>com.qa.api.gorest.tests.CompletePostCallScenario@3f1d2e23</td></tr>
+<tr>
+<td title='com.qa.api.gorest.tests.DataDriventest.createuserByPassingValueViaFile()'><b>createuserByPassingValueViaFile</b><br>Test class: com.qa.api.gorest.tests.DataDriventest<br>Parameters: Jamuna1, female, active</td>
+<td></td>
+<td>0</td>
+<td>com.qa.api.gorest.tests.DataDriventest@4bff7da0</td></tr>
+<tr>
+<td title='com.qa.api.gorest.tests.DataDriventest.createuserByPassingValueViaFile()'><b>createuserByPassingValueViaFile</b><br>Test class: com.qa.api.gorest.tests.DataDriventest<br>Parameters: Riya3, female, active</td>
+<td></td>
+<td>0</td>
+<td>com.qa.api.gorest.tests.DataDriventest@4bff7da0</td></tr>
+<tr>
+<td title='com.qa.api.gorest.tests.PostCallsTest.createuserByPojowithBuilder()'><b>createuserByPojowithBuilder</b><br>Test class: com.qa.api.gorest.tests.PostCallsTest<br>Parameters: karim3, Male, active</td>
+<td></td>
+<td>0</td>
+<td>com.qa.api.gorest.tests.PostCallsTest@536dbea0</td></tr>
+<tr>
+<td title='com.qa.api.gorest.tests.GetAllUserTest.getSingleusers()'><b>getSingleusers</b><br>Test class: com.qa.api.gorest.tests.GetAllUserTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.api.gorest.tests.GetAllUserTest@376a0d86</td></tr>
+<tr>
+<td title='com.qa.api.gorest.tests.DataDriventest.createuserByPassingValueViaFile()'><b>createuserByPassingValueViaFile</b><br>Test class: com.qa.api.gorest.tests.DataDriventest<br>Parameters: Ram2, male, active</td>
+<td></td>
+<td>0</td>
+<td>com.qa.api.gorest.tests.DataDriventest@4bff7da0</td></tr>
+<tr>
+<td title='com.qa.api.gorest.tests.DataDriventest.createuserByPassingValueViaFile()'><b>createuserByPassingValueViaFile</b><br>Test class: com.qa.api.gorest.tests.DataDriventest<br>Parameters: Riya1, female, active</td>
+<td></td>
+<td>0</td>
+<td>com.qa.api.gorest.tests.DataDriventest@4bff7da0</td></tr>
+<tr>
+<td title='com.qa.api.gorest.tests.DataDriventest.createuserByPassingValueViaFile()'><b>createuserByPassingValueViaFile</b><br>Test class: com.qa.api.gorest.tests.DataDriventest<br>Parameters: Jamuna3, female, active</td>
+<td></td>
+<td>0</td>
+<td>com.qa.api.gorest.tests.DataDriventest@4bff7da0</td></tr>
+<tr>
+<td title='com.qa.api.gorest.tests.PostCallsTest.createuserByPojowithBuilder()'><b>createuserByPojowithBuilder</b><br>Test class: com.qa.api.gorest.tests.PostCallsTest<br>Parameters: karim1, Male, active</td>
+<td></td>
+<td>0</td>
+<td>com.qa.api.gorest.tests.PostCallsTest@536dbea0</td></tr>
+<tr>
+<td title='com.qa.api.gorest.tests.GetAllUserTest.getMaleandActiveusers()'><b>getMaleandActiveusers</b><br>Test class: com.qa.api.gorest.tests.GetAllUserTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.api.gorest.tests.GetAllUserTest@376a0d86</td></tr>
+<tr>
+<td title='com.qa.api.gorest.tests.DataDriventest.createuserByPassingValueViaFile()'><b>createuserByPassingValueViaFile</b><br>Test class: com.qa.api.gorest.tests.DataDriventest<br>Parameters: Ram3, male, active</td>
+<td></td>
+<td>0</td>
+<td>com.qa.api.gorest.tests.DataDriventest@4bff7da0</td></tr>
+<tr>
+<td title='com.qa.api.gorest.tests.DataDriventest.createuserByPassingValueDirectly()'><b>createuserByPassingValueDirectly</b><br>Test class: com.qa.api.gorest.tests.DataDriventest<br>Parameters: Divya, female, active</td>
+<td></td>
+<td>0</td>
+<td>com.qa.api.gorest.tests.DataDriventest@4bff7da0</td></tr>
+<tr>
+<td title='com.qa.api.gorest.tests.CompletePostCallScenario.createuserinGorest()'><b>createuserinGorest</b><br>Test class: com.qa.api.gorest.tests.CompletePostCallScenario</td>
+<td></td>
+<td>0</td>
+<td>com.qa.api.gorest.tests.CompletePostCallScenario@3f1d2e23</td></tr>
+<tr>
+<td title='com.qa.api.gorest.tests.DataDriventest.createuserByPassingValueDirectly()'><b>createuserByPassingValueDirectly</b><br>Test class: com.qa.api.gorest.tests.DataDriventest<br>Parameters: Riya, female, active</td>
+<td></td>
+<td>0</td>
+<td>com.qa.api.gorest.tests.DataDriventest@4bff7da0</td></tr>
+<tr>
+<td title='com.qa.api.gorest.tests.DataDriventest.createuserByPassingValueViaFile()'><b>createuserByPassingValueViaFile</b><br>Test class: com.qa.api.gorest.tests.DataDriventest<br>Parameters: Cerlin2, male, active</td>
+<td></td>
+<td>0</td>
+<td>com.qa.api.gorest.tests.DataDriventest@4bff7da0</td></tr>
+<tr>
+<td title='com.qa.api.gorest.tests.DataDriventest.createuserByPassingValueViaFile()'><b>createuserByPassingValueViaFile</b><br>Test class: com.qa.api.gorest.tests.DataDriventest<br>Parameters: Anu1, female, active</td>
+<td></td>
+<td>0</td>
+<td>com.qa.api.gorest.tests.DataDriventest@4bff7da0</td></tr>
+<tr>
+<td title='com.qa.api.gorest.tests.GetAllUserTest.getallFakeStoreProducts()'><b>getallFakeStoreProducts</b><br>Test class: com.qa.api.gorest.tests.GetAllUserTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.api.gorest.tests.GetAllUserTest@376a0d86</td></tr>
+<tr>
+<td title='com.qa.api.gorest.tests.GetAllUserTest.getallFakeStoreUsers()'><b>getallFakeStoreUsers</b><br>Test class: com.qa.api.gorest.tests.GetAllUserTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.api.gorest.tests.GetAllUserTest@376a0d86</td></tr>
+<tr>
+<td title='com.qa.api.gorest.tests.PostCallsTest.createuserByPojowithBuilder()'><b>createuserByPojowithBuilder</b><br>Test class: com.qa.api.gorest.tests.PostCallsTest<br>Parameters: karim2, Male, active</td>
+<td></td>
+<td>0</td>
+<td>com.qa.api.gorest.tests.PostCallsTest@536dbea0</td></tr>
+<tr>
+<td title='com.qa.api.gorest.tests.DeleteTest.updatingUserDetailUsingPutCall()'><b>updatingUserDetailUsingPutCall</b><br>Test class: com.qa.api.gorest.tests.DeleteTest</td>
+<td></td>
+<td>1</td>
+<td>com.qa.api.gorest.tests.DeleteTest@638ef7ed</td></tr>
+<tr>
+<td title='com.qa.api.gorest.tests.DataDriventest.createuserByPassingValueViaFile()'><b>createuserByPassingValueViaFile</b><br>Test class: com.qa.api.gorest.tests.DataDriventest<br>Parameters: Cerlin3, male, active</td>
+<td></td>
+<td>0</td>
+<td>com.qa.api.gorest.tests.DataDriventest@4bff7da0</td></tr>
+</table><p>
+</body>
+</html>

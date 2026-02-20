@@ -1,0 +1,32 @@
+# IDE
+.idea/
+.vscode/
+*.iml
+.project
+.classpath
+.settings/
+
+# Build
+target/
+build/
+.gradle/
+*.class
+
+# Logs & Reports
+*.log
+logs/
+test-output/
+reports/
+extent-reports/
+
+# Screenshots
+screenshots/
+downloads/
+
+# Environment
+.env
+config.properties
+
+# OS
+.DS_Store
+Thumbs.db

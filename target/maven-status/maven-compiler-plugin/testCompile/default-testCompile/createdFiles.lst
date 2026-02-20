@@ -1,0 +1,10 @@
+com/qa/api/gorest/tests/PostCallsTest.class
+com/qa/api/gorest/tests/CompletePostCallScenario.class
+com/qa/api/gorest/tests/PatchCallTest.class
+com/qa/api/fakestore/tests/FakeStoreGetProducts.class
+com/qa/api/gorest/tests/PutCallTest.class
+com/qa/api/gorest/tests/DataDriventest.class
+com/qa/api/gorest/tests/DeleteTest.class
+com/qa/api/gorest/tests/GetAllUserTest.class
+com/qa/api/contacts/tests/CreateUserTest.class
+com/qa/api/scehma/tests/GetAllUserSchemaValidationTest.class

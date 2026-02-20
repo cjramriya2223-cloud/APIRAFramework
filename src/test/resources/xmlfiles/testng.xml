@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite" preserve-order="true">
+
+  <test name="GET CALL">
+    <classes>
+      <class name="com.qa.api.gorest.tests.GetAllUserTest"/>
+    </classes>
+    </test> <!-- Test -->
+    
+    <test name="POST CALL">
+    <classes>
+      <class name="com.qa.api.gorest.tests.PostCallsTest"/>
+    </classes>
+    </test> <!-- Test -->
+    
+    <test name="PUT CALL">
+    <classes>
+      <class name="com.qa.api.gorest.tests.PutCallTest"/>
+    </classes>
+    </test> <!-- Test -->
+    
+    <test name="PATCH CALL">
+    <classes>
+      <class name="com.qa.api.gorest.tests.PatchCallTest"/>
+    </classes>
+    </test> <!-- Test -->
+    
+    <test name="COMPLETE POST CALL SCENARIO">
+    <classes>
+      <class name="com.qa.api.gorest.tests.CompletePostCallScenario"/>
+    </classes>
+    </test> <!-- Test -->
+    
+    <test name="DELETE CALL">
+    <classes>
+      <class name="com.qa.api.gorest.tests.DeleteTest"/>
+    </classes>
+      
+  </test> <!-- Test -->
+   
+  
+</suite> <!-- Suite -->
